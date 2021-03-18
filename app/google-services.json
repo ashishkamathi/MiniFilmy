@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "309655024147",
+    "project_id": "minifilmy-41ca7",
+    "storage_bucket": "minifilmy-41ca7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309655024147:android:4c538ba74cee16fdd485e6",
+        "android_client_info": {
+          "package_name": "com.example.minifilmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309655024147-tvb9v50sjt773tm8v8d9qj7t227ofb7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.minifilmy",
+            "certificate_hash": "5de8df919e0c6be95e59654e7ff8aeec08692744"
+          }
+        },
+        {
+          "client_id": "309655024147-5j7kn4qofia14suo638oivulmcvbk0bo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5NeF3YCa6e_PdVVgj0A7795ihbTZzpis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309655024147-5j7kn4qofia14suo638oivulmcvbk0bo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

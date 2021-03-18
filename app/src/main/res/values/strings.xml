@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MiniFilmy</string>
+    <string name="safety_net_api_key"> AIzaSyCmIQVavqud9ufGDn7pUSb4dkYvkKnTU4c </string>
+    <string name="title_activity_main_flow">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Orders</string>
+    <string name="title_notifications">Account</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_leaderboard">Leaderboard</string>
+    <string name="menu_store">Store</string>
+    <string name="menu_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select">Select</string>
+</resources>
