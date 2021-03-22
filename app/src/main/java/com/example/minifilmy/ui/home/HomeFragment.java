@@ -1,9 +1,11 @@
 package com.example.minifilmy.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +15,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.minifilmy.LoginSignUp.MainActivity;
+import com.example.minifilmy.LoginSignUp.OtpVer;
+import com.example.minifilmy.PlanSelection;
 import com.example.minifilmy.R;
 
 import java.util.ArrayList;
@@ -22,6 +27,7 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private ImageSlider imageSlider;
+    Button projector1,projector2;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
@@ -39,5 +45,31 @@ public class HomeFragment extends Fragment {
         slideModels.add(new SlideModel(R.drawable.slide2));
         slideModels.add(new SlideModel(R.drawable.slide3));
         imageSlider.setImageList(slideModels,true);
+        projector1=getView().findViewById(R.id.Piq);
+        projector2=getView().findViewById(R.id.nebula);
+
+        projector1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PlanSelection.class);
+                intent.putExtra("projectorselected", "Piq");
+                startActivity(intent);
+
+            }
+        });
+        projector2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PlanSelection.class);
+                intent.putExtra("projectorselected", "Nebula");
+                startActivity(intent);
+            }
+        });
     }
+
+
+
+
+
+
 }

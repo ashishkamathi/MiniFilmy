@@ -61,10 +61,9 @@ public class NotificationsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         fAuth = FirebaseAuth.getInstance();
         name=getView().findViewById(R.id.use_name);
-       listView=getView().findViewById(R.id.list);
-       progressBar=getView().findViewById(R.id.progressBar);
-
-       logout=getView().findViewById(R.id.button);
+        listView=getView().findViewById(R.id.list);
+        progressBar=getView().findViewById(R.id.progressBar);
+        logout=getView().findViewById(R.id.button);
         uid=fAuth.getUid();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_activated_1,profile);
         listView.setAdapter(adapter);
